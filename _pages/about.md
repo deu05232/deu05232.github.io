@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD student at Jeonbuk National University
 profile:
   align: right
-  image: hyewon-kim.png
+  image: hyewon-kim-portrait.jpg
   image_circular: false
 social: true
 selected_papers: true
