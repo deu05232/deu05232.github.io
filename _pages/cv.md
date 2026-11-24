@@ -1,12 +1,17 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
 title: CV
+permalink: /cv/
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 4
 ---
+
+## Education
+
+**PhD student**, Electronics and Information Engineering, Jeonbuk National University
+
+## Research interests
+
+Information retrieval, natural language processing, and instruction-aware search.
+
+[Publications]({{ '/publications/' | relative_url }}) · [Research projects]({{ '/projects/' | relative_url }})

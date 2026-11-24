@@ -2,64 +2,18 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+nav_order: 2
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+## Query-preserving regularization
 
-{% else %}
+Adding an instruction can change what a retriever remembers about the original query. This project trains a dense retriever to preserve the query's relevance signal while learning to follow the added instruction.
 
-<!-- Display projects without categories -->
+[Paper](https://doi.org/10.1007/978-3-032-21300-6_11) · [Code](https://github.com/deu05232/Inst_IR_QPR)
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+## Revisiting Promptriever
 
-  <!-- Generate cards for each project -->
+Does a retriever still follow an instruction when the wording changes? We reproduce Promptriever and evaluate how well it handles paraphrases and constraints that are rare in its training data.
 
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+[Experiments and data](https://github.com/deu05232/Revisiting_Promptriever)
