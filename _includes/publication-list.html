@@ -1,7 +1,7 @@
 <style>
   .paper-row { display: flex; align-items: flex-start; gap: 1rem; margin: 1rem 0 1.6rem; }
   .paper-preview { width: 9rem; max-width: 34%; flex: none; }
-  .paper-preview span { display: block; text-align: center; padding: .15rem; background: #dbe9f0; color: #263e4f; border-radius: .3rem; font-weight: 600; }
+  .paper-preview .publication-badge { box-sizing: border-box; width: 100%; }
   .paper-preview img { display: block; width: 100%; height: auto; margin-top: .35rem; border-radius: .3rem; }
   .paper-row p { margin: .25rem 0; }
 </style>
@@ -11,10 +11,10 @@
   {% assign papers = site.pages | where: 'publication_group', group | sort: 'publication_order' %}
   {% for paper in papers %}
     <article class="paper-row">
-      <a class="paper-preview" href="{{ paper.url | relative_url }}" aria-label="{{ paper.title | escape }}">
-        <span>{{ paper.badge | escape }}</span>
+      <div class="paper-preview">
+        {% include publication-badge.html label=paper.badge %}
         {% if paper.preview %}<img src="{{ paper.preview | relative_url }}" alt="" width="240" height="104">{% endif %}
-      </a>
+      </div>
       <div>
         <a href="{{ paper.url | relative_url }}"><strong>{{ paper.title | escape }}</strong></a>
         {% if paper.authors %}<p>{{ paper.authors | escape }}</p>{% endif %}
