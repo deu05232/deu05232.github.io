@@ -17,7 +17,7 @@
       </div>
       <div>
         <a href="{{ paper.url | relative_url }}"><strong>{{ paper.title | escape }}</strong></a>
-        {% if paper.authors %}<p>{{ paper.authors | escape }}</p>{% endif %}
+        {% include publication-info.html paper=paper %}
       </div>
     </article>
   {% endfor %}
