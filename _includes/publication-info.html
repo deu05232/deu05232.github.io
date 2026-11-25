@@ -1,0 +1,8 @@
+<p>{{ include.paper.authors | escape | replace: 'Hyewon Kim', '<strong><u>Hyewon Kim</u></strong>' | replace: '김혜원', '<strong><u>김혜원</u></strong>' }}</p>
+{% if include.paper.venue %}<p><em>{{ include.paper.venue | escape }}</em></p>{% endif %}
+{% if include.paper.pdf or include.paper.code %}
+<p class="publication-links">
+  {% if include.paper.pdf %}<a class="btn btn-sm z-depth-0" style="border: 1px solid currentColor" href="{{ include.paper.pdf | escape }}">PDF</a>{% endif %}
+  {% if include.paper.code %}<a class="btn btn-sm z-depth-0" style="border: 1px solid currentColor" href="{{ include.paper.code | escape }}">CODE</a>{% endif %}
+</p>
+{% endif %}
