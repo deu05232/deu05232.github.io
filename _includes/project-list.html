@@ -1,6 +1,6 @@
-{% assign projects_page = site.pages | where: 'permalink', '/projects/' | first %}
+{% assign projects = site.pages | where: 'project_entry', true | sort: 'project_order' %}
 <ul class="project-list">
-  {% for project in projects_page.projects %}
-    <li><strong>{{ project.title | escape }}</strong> · {{ project.details | escape }}</li>
+  {% for project in projects %}
+    <li><strong><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></strong> · {{ project.description | escape }}</li>
   {% endfor %}
 </ul>
