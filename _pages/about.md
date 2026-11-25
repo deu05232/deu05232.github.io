@@ -8,7 +8,7 @@ profile:
   image: hyewon-kim-portrait-crop.jpg
   image_circular: false
 social: true
-selected_papers: true
+selected_papers: false
 ---
 
 <style>
@@ -24,3 +24,7 @@ My primary interests lie in Information Retrieval (IR) and Natural Language Proc
 - **Instruction-Following Retrieval**
 - **Query Understanding and Expansion**
 - **Generative Retrieval**
+
+<div markdown="0">
+{% include publication-list.html %}
+</div>
