@@ -5,10 +5,11 @@ permalink: /publications/revisiting-promptriever/
 publication_group: International
 publication_order: 1
 badge: SIGIR-AP 2026
+authors: Hyewon Kim and Hyun-Je Song
 preview: /assets/img/publication_preview/revisiting-promptriever.svg
 ---
 
-**Accepted at SIGIR-AP 2026**
+{% include publication-badge.html label=page.badge %} · {{ page.authors }}
 
 We reproduce Promptriever and study how it handles constraints that appear rarely in training or accumulate within one instruction. We also test whether its rankings remain stable when the instruction is paraphrased or its position relative to the query changes.
 
