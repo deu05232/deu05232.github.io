@@ -355,11 +355,14 @@ defaults:
       path: "assets"
     values:
       sitemap: false
-
-# Hide the whole site from search engines (Google, Bing, ...): adds a noindex
-# meta tag to every page and empties sitemap.xml. Set to false to be indexed
-# again. See _plugins/noindex.rb.
-noindex_site: true
+  # Paper detail pages are hidden from search engines (Google, Bing, ...):
+  # noindex meta tag via _plugins/noindex.rb, and left out of sitemap.xml.
+  # Remove this block to let them be indexed again.
+  - scope:
+      path: "_pages/papers"
+    values:
+      noindex: true
+      sitemap: false
 
 sass:
   style: compressed
