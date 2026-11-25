@@ -8,6 +8,8 @@ badge: "Preprint"
 authors: "Hyewon Kim and Hyun-Je Song"
 ---
 
-{% include publication-badge.html label=page.badge %} · {{ page.authors }}
+{% include publication-badge.html label=page.badge %}
+
+{% include publication-info.html paper=page %}
 
 A differentiable search index retrieves a document by generating its identifier. This study encodes document type in the identifier and examines how giving the model access to this metadata affects retrieval.
