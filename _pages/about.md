@@ -15,6 +15,12 @@ selected_papers: true
   .post .profile { max-width: 140px; }
 </style>
 
-I study information retrieval. My research asks how a search engine can follow a user's instructions while preserving the meaning of the original query. I also study how changes in an instruction's wording affect which documents a retriever ranks first.
+Hi, I'm Hyewon. I'm a Ph.D. student in the [Natural Language Learning Lab (NLL Lab)](https://sites.google.com/view/nlllab) at [Jeonbuk National University](https://www.jbnu.ac.kr/), advised by Prof. [Hyun-Je Song](https://sites.google.com/site/songhyunje/Home). I received my M.S. in Computer Engineering and B.S. in IT Information Engineering from the same university.
 
-My [projects]({{ '/projects/' | relative_url }}) include training and evaluating dense retrievers for instruction-aware search.
+My research is driven by a fundamental question: How can retrieval systems better understand and satisfy users' information needs?
+
+My primary interests lie in Information Retrieval (IR) and Natural Language Processing (NLP), with a particular focus on Neural Information Retrieval. My research topics include:
+
+- Instruction-Following Retrieval
+- Query Understanding and Expansion
+- Generative Retrieval
