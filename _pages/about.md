@@ -19,7 +19,7 @@ Hi, I'm Hyewon. I'm a Ph.D. student in the [Natural Language Learning Lab (NLL L
 
 My research is driven by a fundamental question: **How can retrieval systems better understand and satisfy users' information needs?**
 
-My primary interests lie in **Information Retrieval (IR)** and **Natural Language Processing (NLP)**, with a particular focus on **Neural Information Retrieval**. My research topics include:
+My primary interests lie in Information Retrieval (IR) and Natural Language Processing (NLP), with a particular focus on Neural Information Retrieval. My research topics include:
 
 - **Instruction-Following Retrieval**
 - **Query Understanding and Expansion**
