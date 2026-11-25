@@ -6,8 +6,8 @@
   .paper-preview img { display: block; width: 100%; height: auto; margin-top: .35rem; border-radius: .3rem; }
   .paper-row p { margin: .25rem 0; }
 </style>
-{% assign groups = 'International,Domestic' | split: ',' %}
-{% for group in groups %}
+{% assign publications_page = site.pages | where: 'permalink', '/publications/' | first %}
+{% for group in publications_page.publication_groups %}
   <h2 class="academic-heading">Publications [{{ group }}]</h2>
   {% assign papers = site.pages | where: 'publication_group', group | sort: 'publication_order' %}
   {% for paper in papers %}
