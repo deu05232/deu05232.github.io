@@ -36,3 +36,7 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
+
+#navbar .navbar-nav a.nav-link {
+  text-transform: capitalize;
+}
