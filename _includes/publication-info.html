@@ -1,5 +1,5 @@
 <p>{{ include.paper.authors | escape | replace: 'Hyewon Kim', '<strong><u>Hyewon Kim</u></strong>' | replace: '김혜원', '<strong><u>김혜원</u></strong>' }}</p>
-{% if include.paper.venue %}<p><em>{{ include.paper.venue | escape }}</em></p>{% endif %}
+{% if include.paper.venue %}<p><em>{{ include.paper.venue | escape }}</em></p>{% elsif include.paper.badge == 'Preprint' or include.paper.badge == 'Under Review' %}<p><em>{{ include.paper.badge | escape }}</em></p>{% endif %}
 {% if include.paper.pdf or include.paper.code %}
 <p class="publication-links">
   {% if include.paper.pdf %}<a class="btn btn-sm z-depth-0" style="min-width: 4rem; text-align: center; border: 1px solid currentColor" href="{{ include.paper.pdf | escape }}">PDF</a>{% endif %}
