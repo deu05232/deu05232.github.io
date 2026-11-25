@@ -4,7 +4,7 @@ title: "Metadata Injected Differentiable Search Index"
 permalink: /publications/metadata-injected-dsi/
 publication_group: International
 publication_order: 4
-badge: "2023"
+badge: "Preprint"
 authors: "Hyewon Kim and Hyun-Je Song"
 ---
 
