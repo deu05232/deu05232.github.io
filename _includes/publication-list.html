@@ -1,4 +1,5 @@
 <style>
+  h2.academic-heading { clear: both; margin: 2.5rem 0 1.25rem; padding-top: 1.75rem; border-top: 1px solid var(--global-divider-color, #ddd); font-weight: 700; }
   .paper-row { display: flex; align-items: flex-start; gap: 1rem; margin: 1rem 0 1.6rem; }
   .paper-preview { width: 9rem; max-width: 34%; flex: none; }
   .paper-preview .publication-badge { box-sizing: border-box; width: 100%; }
@@ -7,7 +8,7 @@
 </style>
 {% assign groups = 'International,Domestic' | split: ',' %}
 {% for group in groups %}
-  <h2>Publications [{{ group }}]</h2>
+  <h2 class="academic-heading">Publications [{{ group }}]</h2>
   {% assign papers = site.pages | where: 'publication_group', group | sort: 'publication_order' %}
   {% for paper in papers %}
     <article class="paper-row">
