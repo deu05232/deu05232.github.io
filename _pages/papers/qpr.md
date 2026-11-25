@@ -9,7 +9,7 @@ authors: Hyewon Kim and Hyun-Je Song
 preview: /assets/img/publication_preview/qpr.svg
 ---
 
-**Hyewon Kim and Hyun-Je Song** · ECIR 2026 · pp. 172–187
+{% include publication-badge.html label=page.badge %} · {{ page.authors }} · pp. 172–187
 
 Adding an instruction can change which parts of the original query a dense retriever retains. Query-preserving regularization uses the query-only ranking distribution as a training signal so the retriever can preserve the original information need while learning to follow the instruction.
 
